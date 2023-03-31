@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Course Survey</title>
+        <link rel="stylesheet" href="achiev-badge-reward.css">
+    <script src="normal-form.js"></script>
+</head>
+
+<body>
+    <form id="survey-form">
+        <label for="name">Namn:</label>
+        <input type="text" id="name" required><br><br>
+
+        <label for="open-text-1">Vad tycker du var det bästa med kursen?:</label><br>
+        <textarea id="open-text-1" required></textarea><br><br>
+
+        <label for="open-text-2">Vad tycker du var det sämsta med kursen?:</label><br>
+        <textarea id="open-text-2" required></textarea><br><br>
+
+        <fieldset>
+            <legend>Stämde innehållet överens med kursens lärandemål?</legend>
+              <input type="radio" id="teachgoalsYes" name="teachinggoals" value="yes">
+              <label for="ja">Ja</label><br>
+              <input type="radio" id="teachgoalsNo" name="teachinggoals" value="no">
+              <label for="nej">Nej</label><br>
+        </fieldset>
+
+        <label for="open-text-3">Förslag på förbättringar:</label><br>
+        <textarea id="open-text-3" required></textarea><br><br>
+
+        <fieldset>
+            <legend>Skulle du rekommendera kursen?:</legend>
+              <input type="radio" id="recommendCourseYes" name="recommendCourse" value="yes">
+              <label for="ja">Ja</label><br>
+              <input type="radio" id="recommendCourseNo" name="teachinggoals" value="no">
+              <label for="nej">Nej</label><br>
+        </fieldset>
+        <label for="think">Betygsätt kursen på en skala (1 = Urusel - 10 = Fantastiskt):</label>
+        <input type="number" id="think" min="1" max="10" required><br><br><br>
+
+        <button type="button" onclick="validateForm()">Skicka in!</button>
+    </form>
+
+    
+
+
+
+
+    <div id="displayContainer"  class="hidden">
+        <b>Tack för din feedback!</b>
+</div>
+</body>
+
+</html>

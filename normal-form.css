@@ -1,0 +1,87 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: lightgray;
+
+    width: 100vw;
+    height: 100vh;
+    overflow: scroll;
+}
+
+#survey-form{
+    margin: 50px;
+    background-color: white;
+    padding: 10px;
+border: 1px solid black;
+border-radius: 5px;
+box-shadow: 5px 10px 8px #888888;
+}
+
+textarea{
+    height: 100px;
+    width: 455px;
+}
+
+fieldset{
+    margin: 10px 0px;
+}
+.hidden {
+    display: none;
+}
+
+
+
+.unlocked {
+    color: black;
+    display: list-item;
+}
+
+.achieved {
+    color: black;
+}
+
+.locked {
+    color: grey;
+    display: none;
+}
+
+img{
+    width: 30px;
+    height: 30px;
+}
+
+label{
+    margin: 5px 0px;
+}
+
+
+#displayContainer{
+    box-shadow: 5px 10px 8px #888888;
+    width: 30vw;
+    height: 50vh;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 15px;
+    background-color: white;
+}
+
+
+#innerContainer{
+    background-color: white;
+    width: 30vw;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+}
+
+.resultsBadges{
+    height: 100px;
+}
+
+.resultsAchievements{
+    height: 100px;
+}
