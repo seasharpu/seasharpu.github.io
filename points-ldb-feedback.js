@@ -29,7 +29,7 @@ function validateForm() {
 function displayWellDone(score) {
     const leaderboard = document.getElementById("leaderboard");
     const newItem = document.createElement("li");
-    newItem.innerText = `You: ${score}`;
+    newItem.innerHTML = `<b>Du: ${score}</b>`;
 
     let added = false;
     for (let i = 0; i < leaderboard.children.length; i++) {
@@ -47,7 +47,7 @@ function displayWellDone(score) {
         leaderboard.appendChild(newItem);
     }
 
-    document.getElementById("your-score").innerText = `Your score: ${score}`;
+    document.getElementById("your-score").innerText = `${score}`;
     document.getElementById("survey-form").classList.add("hidden");
     document.getElementById("well-done").classList.remove("hidden");
     document.getElementById("well-done").style.display = 'flex';

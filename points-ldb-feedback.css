@@ -138,3 +138,7 @@ label{
     text-align: center;
  border: 1px solid black;   
 }
+
+#your-score{
+    font-size: 30px;
+}
