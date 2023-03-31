@@ -1,5 +1,5 @@
 const achievements = [
-    { points: 50, name: "Feedback nybörjare", img: "badges/50.png"},
+    { points: 50, name: "Feedback Nybörjare", img: "badges/50.png"},
     { points: 100, name: "Feedback Student", img: "badges/100.png" },
     { points: 150, name: "Feedback Mästare", img: "badges/150.png" },
     { points: 200, name: "Feedback Extreme", img: "badges/200.png" },

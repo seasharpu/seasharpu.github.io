@@ -68,7 +68,13 @@ label{
     padding: 15px;
     background-color: white;
 }
-
+#test{
+    display: flex;
+align-items: center;
+}
+#achievements{
+    width: 250px;
+}
 
 #innerContainer{
     background-color: white;
