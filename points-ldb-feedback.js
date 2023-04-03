@@ -27,7 +27,7 @@ function validateForm() {
         }
 
     } else {
-        alert("Please fill in all the fields.");
+        alert("Var snäll och fyll i alla fält, tack.");
     }
 }
 
