@@ -23,7 +23,7 @@
 
         <fieldset>
             <legend>Stämde innehållet överens med kursens lärandemål?</legend>
-              <input type="radio" id="teachgoalsYes" name="teachinggoals" value="yes">
+              <input type="radio" id="teachgoalsYes" name="teachinggoals" value="yes" checked>
               <label for="ja">Ja</label><br>
               <input type="radio" id="teachgoalsNo" name="teachinggoals" value="no">
               <label for="nej">Nej</label><br>
@@ -38,13 +38,13 @@
         <fieldset>
 
             <legend>Skulle du rekommendera kursen?:</legend>
-              <input type="radio" id="recommendCourseYes" name="recommendCourse" value="yes">
+              <input type="radio" id="recommendCourseYes" name="recommendCourse" value="yes" checked>
               <label for="ja">Ja</label><br>
               <input type="radio" id="recommendCourseNo" name="recommendCourse" value="no">
               <label for="nej">Nej</label><br>
         </fieldset>
-        <label for="think">Betygsätt kursen på en skala (1 = Urusel - 10 = Fantastiskt):</label>
-        <input type="number" id="think" min="1" max="10" required><br><br><br>
+        <label for="think">Betygsätt kursen på en skala (1 = Mycket dåligt - 5 = Mycket bra):</label>
+        <input type="number" id="think" min="1" max="5" required><br><br><br>
 
         <button type="button" onclick="validateForm()">Skicka in!</button>
     </form>

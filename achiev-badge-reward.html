@@ -25,7 +25,7 @@
 
         <fieldset>
             <legend>Stämde innehållet överens med kursens lärandemål?</legend>
-              <input type="radio" id="teachgoalsYes" name="teachinggoals" value="yes">
+              <input type="radio" id="teachgoalsYes" name="teachinggoals" value="yes" checked>
               <label for="ja">Ja</label><br>
               <input type="radio" id="teachgoalsNo" name="teachinggoals" value="no">
               <label for="nej">Nej</label><br>
@@ -36,13 +36,13 @@
 
         <fieldset>
             <legend>Skulle du rekommendera kursen?:</legend>
-              <input type="radio" id="recommendCourseYes" name="recommendCourse" value="yes">
+              <input type="radio" id="recommendCourseYes" name="recommendCourse" value="yes" checked>
               <label for="ja">Ja</label><br>
               <input type="radio" id="recommendCourseNo" name="recommendCourse" value="no">
               <label for="nej">Nej</label><br>
         </fieldset>
         <label for="think">Betygsätt kursen på en skala (1 = Urusel - 10 = Fantastiskt):</label>
-        <input type="number" id="think" min="1" max="10" required><br><br><br>
+        <input type="number" id="think" min="1" max="5" required><br><br><br>
 
         <button type="button" onclick="validateForm()">Skicka in!</button>
     </form>
@@ -51,7 +51,7 @@
 
     <div id="achievements">        <h3>Achievements:</h3>
         <ul>
-            <li id="achievement-0" class="locked"><img src="badges/50.png">Feedback nybörjare</li>
+            <li id="achievement-0" class="locked"><img src="badges/50.png">Feedback Nybörjare</li>
             <li id="achievement-1" class="locked"><img src="badges/100.png">Feedback Student</li>
             <li id="achievement-2" class="locked"><img src="badges/150.png">Feedback Mästare</li>
             <li id="achievement-3" class="locked"><img src="badges/200.png">Feedback Extreme</li>

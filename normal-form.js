@@ -10,8 +10,12 @@ function validateForm() {
     const openText2 = document.getElementById("open-text-2");
     const openText3 = document.getElementById("open-text-3");
 
-    if (name.value && openText1.value && openText2.value && openText3.value) {
-        displayThankYouMessage();
+    if (name.value && openText1.value && openText2.value && openText3.value && think.value) {
+        if(think.value > 5){
+            alert("Välj en siffra mellan 1 - 5")
+        }else{
+            displayThankYouMessage();
+        }
     } else {
         alert("Var snäll och fyll i alla fält, tack.");
     }

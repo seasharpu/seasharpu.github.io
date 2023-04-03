@@ -19,8 +19,13 @@ function validateForm() {
     
 
     if (name.value && bestParts.value && think.value && improve.value && worstParts.value) {
-        const totalChars = bestParts.value.length + improve.value.length + worstParts.value.length;
-        displayWellDone(totalChars);
+        if(think.value > 5){
+            alert("Välj en siffra mellan 1 - 5")
+        }else{
+            const totalChars = bestParts.value.length + improve.value.length + worstParts.value.length;
+            displayWellDone(totalChars);
+        }
+
     } else {
         alert("Please fill in all the fields.");
     }

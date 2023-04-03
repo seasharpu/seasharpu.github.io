@@ -31,7 +31,11 @@ function validateForm() {
     const openText3 = document.getElementById("open-text-3");
     const think = document.getElementById("think");
     if (name.value && openText1.value && openText2.value && openText3.value && think.value) {
+        if(think.value > 5){
+            alert("Välj en siffra mellan 1 - 5")
+        }else{
         displayAchievements();
+        }
     } else {
         alert("Var snäll och fyll i alla fält, tack.");
     }
